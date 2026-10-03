@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marketing Digital na Prática</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080812;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* MENU */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(8,8,18,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #20203a;
+}
+
+.nav{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#9b6cff;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:#c8c8d8;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#a87cff;
+}
+
+/* HERO */
+
+.hero{
+    padding:90px 0 80px;
+    background:
+    radial-gradient(circle at 80% 20%,#4d27a533,transparent 30%),
+    radial-gradient(circle at 10% 80%,#1479ff22,transparent 30%);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.tag{
+    display:inline-block;
+    padding:7px 14px;
+    border:1px solid #6d4cff;
+    border-radius:30px;
+    color:#b99cff;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(40px,7vw,70px);
+    line-height:1.05;
+    margin-bottom:22px;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#a66cff,#5fb5ff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:700px;
+    color:#b8b8c9;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:linear-gradient(90deg,#794cff,#4b8cff);
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    border:1px solid #33334e;
+    background:#111122;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#9999aa;
+}
+
+/* CARDS */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.card{
+    background:#10101e;
+    border:1px solid #25253d;
+    border-radius:18px;
+    padding:25px;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:#6650b5;
+}
+
+.icon{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:13px;
+    background:#1b1732;
+    font-size:23px;
+    margin-bottom:17px;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#9999
